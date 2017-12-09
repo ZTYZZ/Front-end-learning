@@ -1,0 +1,9 @@
+1.块级CSS失控的margin-top
+https://wcc723.github.io/css/2016/06/08/css-margin-collapsing/
+
+2.margin-top:
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin-top
+3.可替换元素 非可替换元素
+
+4.margin-top:百分比是父级元素的宽度。
+https://www.zhihu.com/question/20983035
