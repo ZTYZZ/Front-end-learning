@@ -1,17 +1,6 @@
-/*为了效果更加明显，为body添加背景颜色*/
-body{
+.father span.first-child {
+    float:left;
+    width:30px;
+    height:30px;
     background-color:#ccc;
-}
-.father{
-    background-color:blue;
-    height:100px;
-    width:100px;
-    margin-top:20px;
-}
-.son{
-    background-color:red;
-    display:inline;
-    height:20px;
-    width:100px;
-    margin-top:20px;
 }

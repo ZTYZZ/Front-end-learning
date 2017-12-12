@@ -1,4 +1,13 @@
 /*头部*/
+body {
+    background-color:#ccc;
+}
+.wallpaper {
+    width:980px;
+    height:1386px;
+    margin:auto;
+    background-color:#ffffff;
+}
 *{
     margin:0;
     padding:0;
@@ -77,14 +86,13 @@ body{
     height:2px;
 }
 .content_top p.underline {
-    font-size:24px;
+    display:inline;
     font-family:微软雅黑;
     color:#000000;
-    line-height:40px;
     border-bottom:2px solid #cc8091;
 }
-.content_top .title:first-letter {
-    font-size:xx-large;
+.content_top .underline .first-letter {
+    font-size:24px;
 }
 
 p.hint{
