@@ -1,0 +1,466 @@
+/*body加上背景*/
+
+/*需要总结的东西
+1. 关于居中的所有
+2. 关于导航栏的制作
+3.最小宽度的问题
+http://www.ruanyifeng.com/blog/2008/07/best_webpage_width_and_realization.html
+
+4.重叠的问题
+
+*/
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    background-color:#ccc;
+}
+a:link {
+    text-decoration:none;
+}
+
+/*整体的效果*/
+.container {
+    background-color:white;
+    font-family:微软雅黑;
+    margin:auto;/*居中*/
+    min-width: 780px;
+    max-width: 1260px;
+}
+
+/*上部*/
+.container header {
+    position:relative;
+    height:50px;
+    width:100%;
+
+}
+
+.container header p {
+    position:relative;
+    background:url(../img/site-pic.png) no-repeat;
+    text-indent:50px;
+    top:7.5px;
+    left:50px;
+    font-size:20px;
+    line-height:35px;
+}
+
+.container header .nav li {
+    margin-right:50px;
+    display:inline;
+    font-size:15px;
+    line-height:15px;
+    color:#ccc;
+}
+.container header .nav {
+    position:absolute;
+    top:17.5px;
+    right:10px;
+}
+
+/*设置链接效果*/
+.container header .nav a:link,.container header .nav a:visited{
+    text-decoration:none;
+    color:#ccc;
+}
+/*导航栏线条*/
+.container header .nav-line {
+    position:absolute;
+    right:580px;
+    bottom:0px;
+    background-color:#ff4d4d;
+    height:3px;
+    width:70px;
+
+}
+.container header .nav a:hover,
+.container header .nav a:active,
+.container header .nav a:focus {
+    color: #ff6666;
+
+}
+
+/*展示*/
+.container .show {
+    position:relative;
+    width:100%;
+    min-height:600px;
+}
+.container .show img{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+.container .show .text-show {
+    position:absolute;
+    top:25%;
+    left:10%;
+
+}
+.container .show .text-show p:first-child{
+    color:white;
+    font-size:70px;
+}
+
+.container .show .text-show p:nth-child(2){
+    font-size:20px;
+    color:white;
+}
+.container .show .text-show a {
+    line-height:150px;
+    color:white;
+    font-size:30px;
+    padding:10px 50px;
+    background-color:#ff4d4d;
+}
+
+.container .show .text-show a:hover {
+    background-color:white;
+    color:#ff4d4d;
+
+}
+
+/*详细介绍*/
+.container .text-introduce {
+    width:100%;
+    
+}
+
+.container .text-introduce .introduce {
+    display:inline-block;
+    width:15%;
+    margin:4.5%;
+    text-align:center;
+
+}
+.container .text-introduce .introduce p {
+    font-size:15px;
+    color:gray;
+    margin-top:30px;
+    margin-bottom:50px;
+}
+
+/*中间的部分*/
+.container .other-introduce {
+    background-color:#edecec;
+    padding:100px;
+    text-align:center;
+    font-size:50px;
+    color:gray;
+}
+
+
+/*@ 地图查找部分*/
+.container .found-information {
+    background:url(../img/p.jpg) repeat;
+    width:100%;
+    height:400px;
+    text-align:center;
+
+}
+.container .found-information p:first-child {
+    color:white;
+    font-size:25px;
+    padding:40px;
+}
+.container .found-information p:nth-child(2) {
+    color:white;
+    font-size:20px;
+    margin-bottom:50px;
+}
+
+.container .found-information form select{
+    padding:10px;
+    border:none;
+    color:#ccc;
+    width:20%;
+}
+.container .found-information form button {
+    width:20%;
+    padding:10px;
+    border:none;
+    color:white;
+    background-color:#ff4d4d;
+}
+
+/*具体活动展示页面*/
+.container .activities  {
+    width:80%;
+    font-family:微软雅黑;
+    margin:100px auto;
+    text-align:center;
+    
+}
+
+.container .activities .activity {
+    display:inline-block;
+    width:20%;
+    margin:2%;
+}
+.container .activities .activity img {
+    padding:5px;
+    box-shadow:1px 1px 1px #ccc;
+}
+.container .activities .activity .activity-city {
+    font-size:20px;
+}
+.container .activities .activity .activity-address {
+    font-size:15px;
+    color:#ccc;
+}
+
+/*下部的图文介绍*/
+.container .introduce-activity {
+    position:relative;
+}
+
+.container .introduce-activity .img-introduce .float-text {
+    position:absolute;
+    font-size:25px;
+    top:150px;
+    color:white;
+    left:250px;
+    line-height:35px;
+    text-align:center;
+
+}
+.container .introduce-activity .img-introduce .float-text p:first-child {
+    font-size:50px;
+}
+.container .introduce-activity .img-introduce .float-text p:nth-child(2){
+    font-size:150px;
+    margin-bottom:30px;
+    line-height:150px;
+}
+
+.container .introduce-activity .text-introduce {
+    position:absolute;
+    top:20%;
+    right:50px;
+    width:25%;
+    font-family:宋体;
+    font-size:15px;
+    line-height:30px;
+    color:#ccc;
+}
+
+.container .introduce-activity .text-introduce .title {
+    text-align:center;
+    font-family:微软雅黑;
+    color:black;
+    font-size:20px;
+    line-height:50px;
+    font-weight:bold;
+}
+.container .introduce-activity .text-introduce span {
+    color:#ff4d4d;
+}
+.container .introduce-activity .text-introduce a{
+    position:relative;
+    left:25%;
+    top: 50px;
+    color:#ff6666;
+    font-size:15px;
+    font-family:微软雅黑;
+    border:1px solid #ff6666;
+    padding:10px 40px;
+}
+
+/*第二个图文介绍 可以类似于三栏式设计*/
+.container .more-introduce {
+    width:100%;
+    font-size:20px;
+    overflow:hidden;
+    
+}
+.container .more-introduce>div,.container .more-introduce img{
+    height:596px;
+}
+
+.container .more-introduce .primary {
+    width:30%;
+    float:left;
+    background-color:#ff6666;
+    color:white;
+    font-size:20px;
+    text-align:center;
+}
+.container .more-introduce .primary p,.container .more-introduce .secondary .primary p {
+    position:relative;
+    top:200px;
+}
+.container .more-introduce .primary a {
+    position:relative;
+    top:250px;
+    border:1px solid white;
+    padding:10px 30px;
+    line-height:50px;
+}
+.container .more-introduce .secondary {
+    width:70%;
+    float:right;
+}
+.container .more-introduce .secondary .primary {
+    float:left;
+    width:40%;
+    background-color:white;
+    color:#ff6666;
+    font-size:20px;
+}
+.container .more-introduce .secondary .primary a {
+    position:relative;
+    top:250px;
+    border:1px solid #ff6666;
+    padding:10px 30px;
+    line-height:50px;
+}
+.container .more-introduce .secondary .secondary {
+    float:right;
+    width:50%;
+}
+
+/*@ 志愿者协议*/
+.container .volunteer-signin {
+    overflow:auto;
+    width:80%;
+    margin:auto;
+}
+
+.container .volunteer-signin .join-us {
+    font-size:15px;
+    line-height:20px;
+    color:gray;
+    text-align:center;
+    margin:100px;
+    
+}
+.container .volunteer-signin .join-us .title {
+    font-size:25px;
+    color:black;
+    line-height:100px;
+    
+}
+
+/*@ 申请表单样式*/
+
+/*左边的介绍*/
+
+.container .volunteer-signin .introduce {
+    float:left;
+    width:30%;
+    font-size:15px;
+    font-family:宋体;
+    color:gray;
+}
+
+.container .volunteer-signin .introduce .title {
+    font-size:18px;
+    color:black;
+    margin-bottom:30px;
+    font-family:黑体;
+}
+
+/*表单样式*/
+.container .volunteer-signin form {
+    width:60%;
+    float:right;
+    font-family:宋体;
+    
+}
+
+.container .volunteer-signin form #name,.container .volunteer-signin form #age,
+.container .volunteer-signin form #address,.container .volunteer-signin form #contact {
+    margin-right:20px;
+    margin-bottom:10px;
+    width:35%;
+    border:none;
+    padding:20px;
+    background-color:#ededef;
+}
+.container .volunteer-signin form #introduce {
+    border:none;
+    padding:20px;
+    width:84%;
+    height:100px;
+    background-color:#ededef;
+}
+.container .volunteer-signin form button {
+    border:none;
+    width:90%;
+    padding:20px;
+    background-color:#ededef;
+}
+
+/*@ 底部设计*/
+
+.container footer {
+    position:relative;
+    background-color:#33363f;
+    height:300px;
+    width:100%;
+    color:white;
+    text-align:center;
+}
+.container footer .title {
+    font-size:20px;
+    font-family:微软雅黑;
+    line-height:40px;
+}
+.container footer p{
+    position:relative;
+    top:50px;
+    font-size:15px;
+    font-family:宋体;
+    
+}
+
+/*搜索框*/
+.container footer form {
+    position:relative;
+    top:100px;
+    margin:20px;
+}
+.container footer form input{
+    width:35%;
+    padding:10px;
+    border:none;
+    color:#ccc;
+}
+.container footer form button {
+    padding:10px;
+    width:10%;
+    border:none;
+    background-color:gray;
+    color:white;
+}
+
+
+.container footer .bottom {
+    position:absolute;
+    width:100%;
+    bottom:0px;
+    background-color:black;
+    height:40px;
+
+}
+
+.container footer .bottom p{
+    position:absolute;
+    font-size:12px;
+    left:20px;
+    top:14px;
+    line-height:12px;
+}
+.container footer .bottom a {
+    position:absolute;
+    font-size:12px;
+    right:20px;
+    top:14px;
+    line-height:12px;
+    color:white;
+
+}
