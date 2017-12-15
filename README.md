@@ -28,5 +28,9 @@ ife网站链接：http://ife.baidu.com/
 
 总结完任务6中的知识，链接：https://zhuanlan.zhihu.com/p/31848738
 
+# 2017.12.15
+完成任务7 ，今晚的任务就是总结一下。
+任务7 代码地址： https://github.com/ZTYZZ/Front-end-learning/tree/master/xiaowei/task7
+
 
 
